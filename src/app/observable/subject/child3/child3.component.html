@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        Child1
+    </div>
+    <div class="card-body">
+        <strong>My Name is <span class="text-primary">{{userName}}</span></strong>
+        <br>
+        <br>
+        <div>
+            <input type="text" class="form-group mb-3" #myInput>
+        </div>
+        <button class="btn btn-primary" (click)="changeUserName(myInput)">Change</button>
+    </div>
+</div>

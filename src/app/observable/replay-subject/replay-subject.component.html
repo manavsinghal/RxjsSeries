@@ -1,0 +1,51 @@
+<div class="my-3">
+    <h2>Replay Subject</h2>
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <h3>Add</h3>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <input type="text" class="form-control" #myvideo>      
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success" (click)="addVideo(myvideo)">Add Video</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <strong>User 01</strong>
+            <hr>
+            <ul class="techlist">
+                <li *ngFor="let item of userList1"><strong>Video :</strong>{{item}}</li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <strong>User 02</strong>
+            <hr>
+            <ul class="techlist">
+                <li *ngFor="let item of userList2"><strong>Video :</strong>{{item}}</li>
+            </ul>
+            <button class="btn" [ngClass]="button2===true ? 'btn-danger' : 'btn-success'" (click)="isButtonClicked(2)">{{button2===true ? 'Unsubscribe' : 'Subscribe'}}</button>
+        </div>
+
+        <div class="col-md-4">
+            <strong>User 03</strong>
+            <hr>
+            <ul class="techlist">
+                <li *ngFor="let item of userList3"><strong>Video :</strong>{{item}}</li>
+            </ul>
+            <button class="btn" [ngClass]="button3===true ? 'btn-danger' : 'btn-success'" (click)="isButtonClicked(3)">{{button3===true ? 'Unsubscribe' : 'Subscribe'}}</button>
+        </div>
+    </div>
+</div>

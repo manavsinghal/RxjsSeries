@@ -1,0 +1,32 @@
+<div class="my-3">
+    <h2>Filter Operator</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p class="bg-light py-3 px-3 border rounded"><strong>Filter by length</strong></p>
+            
+            <hr>
+            <table>
+                <tr><th>Id</th><th>Name</th></tr>
+                <tr *ngFor="let obj of res1"><td>{{obj.id}}</td><td>{{obj.name}}</td></tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <p class="bg-light py-3 px-3 border rounded"><strong>Filter by Gender</strong></p>      
+            <hr>
+            <table>
+                <tr><th>Id</th><th>Name</th><th>Gender</th></tr>
+                <tr *ngFor="let obj of res2"><td>{{obj.id}}</td><td>{{obj.name}}</td><td>{{obj.gender}}</td></tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <p class="bg-light py-3 px-3 border rounded"><strong>Filter nth item</strong></p>      
+            <hr>
+            <table>
+                <tr><th>Id</th><th>Name</th><th>Gender</th></tr>
+                <tr *ngFor="let obj of res3"><td>{{obj.id}}</td><td>{{obj.name}}</td><td>{{obj.gender}}</td></tr>
+            </table>
+        </div>
+    </div>
+</div>

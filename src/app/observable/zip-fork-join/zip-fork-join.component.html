@@ -1,0 +1,32 @@
+<div class="my-3">
+    <h2>Zip & ForkJoin</h2>
+    <br>
+
+    <label for="name">Name</label>
+    <select name="name" id="name" #name>
+        
+        <option *ngFor="let n of names" value="{{n}}">{{n}}</option>
+    </select>
+
+    <label for="color">Color</label>
+    <select name="color" id="color" #color>
+        <option *ngFor="let color of colors" value="{{color}}">{{color}}</option>
+    </select>
+    <br>
+    <br>
+
+    <strong>Zip</strong>
+
+    <div id="ele1">
+
+    </div>
+
+    <br>
+    <br>
+
+    <strong>ForkJoin</strong>
+
+    <div id="ele2">
+
+    </div>
+</div>

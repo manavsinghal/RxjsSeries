@@ -1,0 +1,26 @@
+<div class="my-3">
+    <h2>
+        Pluck Operator
+    </h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light py-3 px-3 border rounded"><strong>Pluck('name') root data</strong></p>
+            
+            <hr>
+            <table>
+                <tr><th>Name</th></tr>
+                <tr *ngFor="let name of data"><td>{{name}}</td></tr>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <p class="bg-light py-3 px-3 border rounded"><strong>pluck('job','title') nested data</strong></p>      
+            <hr>
+            <table>
+                <tr><th>Job title</th></tr>
+                <tr *ngFor="let name of data1"><td>{{name}}</td></tr>
+            </table>
+        </div>
+    </div>
+</div>
